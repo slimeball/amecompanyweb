@@ -17,7 +17,7 @@ body{font:16px/1.5 "Microsoft YaHei",\5fae\8f6f\96c5\9ed1,arial,\5b8b\4f53;color
 		.z_header p a{float: left;width: 40.5185%;}
 			.z_header p a img{width: 100%;}
 	.z_header .z_cart{position: relative;}
-		.z_header .z_cart i{position: absolute; height: 15px; display: block; width: 15px; text-align: center; background-color: #c8af6b; border-radius: 20px; top: 5px; right: 5px; font-size: 0.6em; color: #fff;}
+		.z_header .z_cart i{position: absolute; display: block; padding: 0 5px; text-align: center; background-color: #c8af6b; border-radius: 20px; top: 5px; right: 5px; font-size: 0.6em; color: #fff;}
 .z_nav{width: 100%;background: #000;text-align: center;position: relative;height: 44px;}
 	.z_nav li{width: 21%;float: left;line-height: 44px;}
 		.z_nav .selected a{color:#ffeb41;}
