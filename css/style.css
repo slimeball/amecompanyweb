@@ -1,0 +1,373 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Benu (slimeball@foxmail.com)
+ * @date    2014-09-15 10:28:04
+ * @version AME盒子通用CSS
+ */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video,input{margin:0;padding:0;border:none;outline:0;font-size:100%;font:inherit;vertical-align:baseline;-webkit-tap-highlight-color:rgba(0,0,0,0) ;}html,body,form,fieldset,p,div,h1,h2,h3,h4,h5,h6{-webkit-text-size-adjust:none}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{font-family:arial,sans-serif}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}ins,a{text-decoration:none}del{text-decoration:line-through}table{border-spacing:0}
+.clear{clear: both;}
+/*初始化*/
+/*================================================================*/
+body{font:16px/1.5 "Microsoft YaHei",\5fae\8f6f\96c5\9ed1,arial,\5b8b\4f53;color:#333;outline:0; background-color:#fff; width:100%;}
+.z_header{width: 100%;}
+    .z_logo{width: 31.455399%;float: left;}
+        .z_header img{width: 100%;}
+    .z_header p{width: 42.2535%;float: right;}
+        .z_header p a{float: left;width: 21.5185%;}
+            .z_header p a img{width: 100%;}
+.z_nav{width: 100%;background: #000;text-align: center;position: relative;height: 44px;}
+    .z_nav li{width: 21%;float: left;line-height: 44px;}
+        .z_nav .selected a{color:#ffeb41;}
+        .z_nav .selected span{ display: block; border-bottom: 3px solid #f4e13e; height: -13px; margin-top: -4px; width: 73%; margin-left: 13%;}
+        .z_nav li a{color: #fff;font-size: 0.7em;}
+        .z_nav li i{width: 33.5%; float: right; margin-top: 2%; }
+        .z_nav li .z_new{width: 100%;}
+        .z_nav li .left_nav img{float: right;}
+        .z_nav i{position: absolute; top: 28%; right: 15%;}
+.z_subnav{width: 21.2187%;text-align: center;background: #c8af6c;position: absolute;right: 0;}
+    .z_subnav li{padding:10% 0;}
+    .z_subnav li{font-size: 0.7em;}
+        .z_subnav li a{color: #fff;display: block;}
+/*导航以上*/
+footer{width: 95%;margin:0 auto;}
+    footer li{float: left;width: 14%; margin: 13% 3%;}
+        footer li img{width: 100%;}
+        footer li p{text-align: center;font-size: 0.6em;}
+    footer .copyright{border-top: 1px solid #666;font-size: 0.7em; text-align: center; padding: 5%;}
+/*底部*/
+/*===========================头部底部=====================================*/
+
+.blackGold a:link, .blackGold a:visited, .blackGold a:active {color:#000; text-decoration:none;}
+.blackGold a:hover, .fooderText a:hover {color: #c9ae6c;}
+
+.whitekGold a:link, .whitekGold a:visited, .whitekGold a:active {color:#FFF; text-decoration:none;}
+.whitekGold a:hover {color: #c9ae6c;}
+
+.whiteOrange a:link, .whiteOrange a:visited, .whiteOrange a:active {color:#FFF; text-decoration:none;}
+.whiteOrange a:hover {color:#F60;}
+
+.GoldHover a:link, .GoldHover a:visited, .GoldHover a:active {color: #c5aa65;}
+.GoldHover a:hover {color:#000;}
+
+.pageHover a:link, .pageHover a:visited, .pageHover a:active { color:#000;}
+.pageHover a:hover {color:#c9ae6c;}
+
+.loginBut a{text-decoration:none; background:#000;color:#FFF; text-align: center;}
+
+.talentBgA a:hover { background:#fe0060; color:#FFF;}
+
+.memberLeftMenuA a:link, .memberLeftMenuA a:visited, .memberLeftMenuA a:active {}
+.memberLeftMenuA a:hover { background-color:#ececec;}
+.blackGold .carNumSub,.blackGold .carNumAdd{color:#000; text-decoration:none;height: 23px;line-height: 23px;width: 28%;}
+.lineBlockLeft{ display:block; float:left;}
+.lineBlockRight{ display:block; float:right;}
+
+body{ border-top:#c9ae6c 3px solid;}
+.logo{ float:left;}
+#headerTop,#main{ width:100%; margin:0 auto;}
+
+.sideTool{width:88px;position:fixed;_position:absolute;right:20px;top:30%;_bottom: "auto"; cursor:pointer;}
+	.sideTool a{ display:block; margin-bottom:2px;height:40px; line-height:40px; background:#f2f2f2;}
+	body .sideTool .onSelect{ background:#000; color:#FFF;}
+
+.dialogTitle{ width:675px; margin:0 auto; padding-top:33px; padding-bottom:20px; margin-bottom:25px; border-bottom:#c8ad78 2px solid; color:#c5aa65; font-size:16px; font-weight:bold;}
+.inputStyle,.textareaStyle{ padding:6px 6px; border:#c8ad78 1px solid;outline:0px;}
+.dialogConLeft{ margin-left:60px; width:388px; float:left; overflow:hidden;}
+	.inputGroup{ overflow:hidden;zoom:1; margin-bottom:10px;}
+        .inputGroup label{font-size: 0.7em;}
+		.fieldLeft{  text-align:right; float:left; display:block; padding-top:7px;width: 25%;}
+		.fieldRig{float:left;}
+			.inputMsg{ width:250px; display: block !important; line-height: 21px !important; height: 21px !important; margin-left: 0px !important; text-indent: 21px !important; overflow:hidden; color:#c8ad78 !important;}
+	.safeInfo,.CheckBoxInfo{margin-left:75px; width:250px; height:40px;}
+		.remember,.autoLoginText,.inputCheckBox,.inputCheckText{ float:left;}
+		.remember,.inputCheckBox{ margin-top:2px;*margin-top:-2px;}	
+.dialogConRight{ width:285px; height:310px;float:left; border-left:#CCC 1px solid;}
+	.dialogConRightTit,.dialogConRightBut{ width:145px; margin: 0 auto; color:#c5aa65; font-size:16px; font-weight:bold; margin-bottom:17px;}
+.submitButton{ display:block; width:142px; height:40px; line-height:40px; font-size:16px; background:#c8ad78; color:#FFF;text-align: center;}
+					
+
+.payMain{ border:#CCC 1px solid; padding:0 8px;}
+.zebraBbTop{height:36px;background:url(../images/planningRowBg.jpg) repeat-x;} 
+	.payTopText{ display:block; float:left;font-size:20px; height:36px; line-height:36px; margin-left:20px;}
+	.payTopButtom{ display:block; float:right; width:85px; height:20px; line-height:20px; font-size:14px; background:#000; margin-top:7px; margin-right:12px; border:#000 1px solid;}
+    .carTable{ border:#CCC 1px solid; width:100%; border-top:none;font-size: 0.9em;margin-top: 1%}
+    .carTable td,.carTable th{ border-top:#CCC 1px solid;  text-align:center; vertical-align:middle;padding: 2%;}
+	.carTable .carTr2{ background:#FDFDFD;}
+    .carPro{ margin:0 auto;overflow:hidden;zoom:1;padding: 3%;}
+            .carProPic img{ width: 100%;}
+        .carProTit{ text-align:center; font-size: 0.6em;width: 100%;}
+    .carNumDiv{ width:100%; overflow:hidden;zoom:1; margin:0 auto;}
+        .carNumSub,.carNumAdd,.carNumInput{width:20%; background:#f0f0f0; font-weight:bold;text-align:center;}
+        .carNumInput{ border:#CCC 1px solid; width:40%;outline: none;background: none;}
+	.carTable tfoot td{ background:#f2f2f2;padding: 2%;font-size: 0.7em;}
+	.carBottom{ padding:20px 81px; overflow:hidden;zoom:1;}
+.addrListUl ol{  border:#CCC 1px solid; margin-top:10px; padding:6px 0; cursor: pointer;}
+	.addrListUl .formEleGroup{ padding-left:92px; padding-right:55px;}
+	.addrUpdate{ float:right; margin-top:6px;}
+.addrNewOl{ background:#f2f2f2; position:relative;}
+	.addrNewIco{ height:22px; background:url(../images/memberIco1.png) 0 -15px no-repeat; font-size:14px; line-height:25px; color:#c7ad69; position:absolute; top:8px; left:12px; z-index:1; padding-left:23px; font-weight:bold;}
+.addrListUl ol.addrNewOlForm{ padding:10px 0;}
+	.addrNewOl .formG2{ font-size:14px; font-weight:bold; margin-top:5px;}
+	.addrNewOlForm .inputMsg,.addrNewOlForm .inputStyle{ display:inherit; float:left;}
+	.addrNewOlForm .inputMsg{ height:28px; line-height:29px;}
+	.addrNewOlForm .selectStyle{ border:#C8AD78 1px solid; margin-top:3px; font-size:16px; padding: 3px; background: transparent;}
+.payModeList{ border:#CCC 1px solid; margin-top:10px;}
+	.payModeOne{ width:150px; height:32px;margin-top:24px; margin-bottom:10px;}
+	.payModeOne label{cursor: pointer;}
+	.payModeListUl{ overflow:hidden; zoom:1;}
+	.payModeListUl li{ float:left; width:150px; height:32px;margin-left:38px; margin-top:20px;}
+		.payModeLiLeft{ margin-top:9px;*margin-top:5px;}
+		.payModeLiRight{ width:120px; height:30px; border:#eeeeee 1px solid; overflow:hidden;}
+
+.cfl:after, .header_wrap:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.payModeDiv .gateway_list {
+    padding: 15px 0 24px 38px;
+}
+.payModeDiv .pay_Super_w {
+    height: 112px;
+    overflow: hidden;
+}
+.payModeDiv .pay_Super li {
+    margin-right: 14px;
+}
+.payModeDiv .pay_Super li {
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+    padding: 8px 0;
+    width: 176px;
+}
+.payModeDiv .pay_Super li input {
+    float: left;
+    margin: 10px 15px 0 0;
+     font-size: 100%;
+    outline: medium none;
+    resize: none;
+    vertical-align: middle;
+}
+.gateway_list li label {
+    border: 1px solid #cecece;
+    cursor: pointer;
+    float: left;
+    height: 38px;
+    width: 130px;
+}
+.payModeDiv .pay_Super li label:hover {
+    border: 1px solid #c8ad78;
+}
+.bank-list .icon-info {
+    font: 12px/1.5 tahoma,arial,宋体;
+}
+.bank-list .icon {
+    background-image: url("../images/bankicon.png");
+    background-repeat: no-repeat;
+}
+.bank-list .ICBCB2C {
+    background-position: 5px -37px;
+}
+.bank-list .CMB {
+    background-position: 5px -77px;
+}
+.bank-list .CCB {
+    background-position: 5px -317px;
+}
+.bank-list .BOCB2C {
+    background-position: 5px -517px;
+}
+.bank-list .ABC {
+    background-position: 5px -477px;
+}
+.bank-list .COMM {
+    background-position: 5px -597px;
+}
+.bank-list .PSBC-DEBIT {
+    background-position: 5px -397px;
+}
+.bank-list .CEBBANK {
+    background-position: 5px -437px;
+}
+.bank-list .SPDB {
+    background-position: 5px -357px;
+}
+.bank-list .GDB {
+    background-position: 5px -277px;
+}
+.bank-list .CITIC {
+    background-position: 5px -197px;
+}
+.bank-list .CIB {
+    background-position: 5px -3357px;
+}
+.bank-list .SDB {
+    background-position: 5px -237px;
+}
+.bank-list .CMBC {
+    background-position: 5px -117px;
+}
+.bank-list .HZCBB2C {
+    background-position: 5px -757px;
+}
+.bank-list .SHBANK {
+    background-position: 5px -837px;
+}
+.bank-list .BJRCB {
+    background-position: 5px -2637px;
+}
+.bank-list .SPABANK {
+    background-position: 5px -1877px;
+}
+.bank-list .FDB {
+    background-position: 5px -1317px;
+}
+.bank-list .NBBANK {
+    background-position: 5px -1237px;
+}
+.bank-list .BJBANK {
+    background-position: 5px -3237px;
+}
+.bank-list .WZCBB2C-DEBIT {
+    background-position: 5px -1717px;
+}
+.bank-list .ICBCBTB {
+    background-image: url("../images/ENV_ICBC_OUT.gif");
+    background-position: 5px 7px;
+}
+.bank-list .CCBBTB {
+    background-image: url("../images/ENV_CCB_OUT.gif");
+    background-position: 5px 7px;
+}
+.bank-list .ABCBTB {
+    background-image: url("../images/ENV_ABC_OUT.gif");
+    background-position: 5px 7px;
+}
+.bank-list .SPDBB2B {
+    background-image: url("../images/ENV_SPDB_OUT.gif");
+    background-position: 5px 7px;
+}
+.lg_pull{
+	font-style: normal;
+	font-size: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.memberMain .addrListUl{
+	margin: 0px 6px 10px;
+}
+.orderInfo .icon{
+	border: 1px solid #cecece;
+    cursor: pointer;
+    height: 38px;
+    width: 130px;
+    display: inline-block;
+    background-image: url("file:///E|/github/images/bankicon.png");
+    background-repeat: no-repeat;
+}
+.orderInfo .ICBCB2C {
+    background-position: 5px -37px;
+}
+.orderInfo .CMB {
+    background-position: 5px -77px;
+}
+.orderInfo .CCB {
+    background-position: 5px -317px;
+}
+.orderInfo .BOCB2C {
+    background-position: 5px -517px;
+}
+.orderInfo .ABC {
+    background-position: 5px -477px;
+}
+.orderInfo .COMM {
+    background-position: 5px -597px;
+}
+.orderInfo .PSBC-DEBIT {
+    background-position: 5px -397px;
+}
+.orderInfo .CEBBANK {
+    background-position: 5px -437px;
+}
+.orderInfo .SPDB {
+    background-position: 5px -357px;
+}
+.orderInfo .GDB {
+    background-position: 5px -277px;
+}
+.orderInfo .CITIC {
+    background-position: 5px -197px;
+}
+.orderInfo .CIB {
+    background-position: 5px -3357px;
+}
+.orderInfo .SDB {
+    background-position: 5px -237px;
+}
+.orderInfo .CMBC {
+    background-position: 5px -117px;
+}
+.orderInfo .HZCBB2C {
+    background-position: 5px -757px;
+}
+.orderInfo .SHBANK {
+    background-position: 5px -837px;
+}
+.orderInfo .BJRCB {
+    background-position: 5px -2637px;
+}
+.orderInfo .SPABANK {
+    background-position: 5px -1877px;
+}
+.orderInfo .FDB {
+    background-position: 5px -1317px;
+}
+.orderInfo .NBBANK {
+    background-position: 5px -1237px;
+}
+.orderInfo .BJBANK {
+    background-position: 5px -3237px;
+}
+.orderInfo .WZCBB2C-DEBIT {
+    background-position: 5px -1717px;
+}
+.orderInfo .ICBCBTB {
+    background-image: url("file:///E|/github/images/ENV_ICBC_OUT.gif");
+    background-position: 5px 7px;
+}
+.orderInfo .CCBBTB {
+    background-image: url("file:///E|/github/images/ENV_CCB_OUT.gif");
+    background-position: 5px 7px;
+}
+.orderInfo .ABCBTB {
+    background-image: url("file:///E|/github/images/ENV_ABC_OUT.gif");
+    background-position: 5px 7px;
+}
+.orderInfo .SPDBB2B {
+    background-image: url("file:///E|/github/images/ENV_SPDB_OUT.gif");
+    background-position: 5px 7px;
+}
+.orderInfo .directPay {
+    background: url("file:///E|/github/images/alipay.gif") no-repeat scroll 5px 2px #fff;
+}
+
+.addrNewOlForm .userTextarea{
+	height: 124px;
+}
+.addrNewOlForm .userTextarea textarea{
+	resize: none;
+	height: 110px;
+	width: 250px;
+	border: 1px solid #c8ad78;
+	padding: 6px;
+	float: left;
+}
+
+
+

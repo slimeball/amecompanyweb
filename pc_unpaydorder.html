@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人中心未付款订单</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1;" id="viewport" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/touch.js"></script>
+	<script type="text/javascript" src="js/1.7.1-jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body>
+<!-- 导航以上 -->
+<div class="z_header">
+    <div class="z_logo"><img src="./images/logo.jpg"></div>
+    <p><a class="z_cart" href=""><img src="./images/cart.jpg"><i>1</i></a><a class="z_personal" href=""><img src="./images/personal.jpg"></a></p>
+</div>
+<div class="clear"></div>
+<div class="z_nav" id="z_nav">
+	<ul>
+		<li style="width:15.625%;"><a href="index.html">首页<span></span></a></li>
+		<li><a href="orderit.html">立即订购<span></span></a></li>
+		<li><a href="special.html">特别策划<span></span></a></li>
+		<li><a href="amebox.html">A蜜魔盒<span></span></a></li>
+		<i><img height="13" class="z_new" src="./images/new.png"></i>
+		<li style="width:11.5625%;float:right;"><a class="left_nav"><img height="44" src="./images/left_nav.jpg"></a></li>
+	</ul>
+</div>
+<div class="z_subnav" style="display:none;">
+	<ul>
+		<li><a href="">如何订购</a></li>
+		<li><a href="">主题盒子</a></li>
+		<li><a href="">A蜜资讯</a></li>
+		<li><a href="">A蜜晒单</a></li>
+	</ul>
+</div>
+<!-- 导航以上 -->
+<div class="pc_payMain">
+    <p class="pc_zebraBbTop pc_loginBut">
+    <a href="#" class="pc_payTopButtom"><img src="./images/pc_arrow_black.png"></a><span class="pc_payTopText">未付款订单</span>
+	<div class="clear"></div>
+    </p>
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td>项目:<span>美容盒子 * 6个月</span></td>
+        </tr>
+        <tr>
+            <td>单价:<span>¥ 98.00 元</span></td>
+        </tr>
+        <tr>
+            <td><b>数量：</b><div class="pc_carNumDiv">
+                            <a class="pc_carNumSub pc_lineBlockLeft" href="javascript:void(0)">-</a>
+                            <input readonly="readonly"  class="pc_carNumInput pc_lineBlockLeft" type="text" name="num" value="1" />件
+                            <a class="pc_carNumAdd pc_lineBlockLeft" href="javascript:void(0)">+</a>
+                 </div>
+            </td>
+        </tr>
+        <tr>
+            <td>总价：<span>¥ 98.00 元</span><a href="#" style="float:right;color:#b6b6b6;">删除</a></td>
+        </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td>项目:<span>美容盒子 * 6个月</span></td>
+        </tr>
+        <tr>
+            <td>单价:<span>¥ 98.00 元</span></td>
+        </tr>
+        <tr>
+            <td><b>数量：</b><div class="pc_carNumDiv">
+                            <a class="pc_carNumSub pc_lineBlockLeft" href="javascript:void(0)">-</a>
+                            <input readonly="readonly"  class="pc_carNumInput pc_lineBlockLeft" type="text" name="num" value="1" />件
+                            <a class="pc_carNumAdd pc_lineBlockLeft" href="javascript:void(0)">+</a>
+                 </div>
+            </td>
+        </tr>
+        <tr>
+            <td>总价：<span>¥ 98.00 元</span><a href="#" style="float:right;color:#b6b6b6;">删除</a></td>
+        </tr>
+    </table>
+    <div class="pc_cash_pay"><i>总计:￥</i><i>198</i><i>元</i></span></div>
+    <div class="pc_confirm_info"><a href="#">下一步</a></div>
+    <div class="pc_user_logout">184417703@qq.com， <a href="#">退出登陆</a></div>
+</div>
+<!--main end-->
+<!-- 底部 -->
+<footer>
+	<ul>
+		<li><img src="./images/subpic01.jpg"><p>超值精选</p></li>
+		<li><img src="./images/subpic02.jpg"><p>正品保证</p></li>
+		<li><img src="./images/subpic03.jpg"><p>免费运送</p></li>
+		<li><img src="./images/subpic04.jpg"><p>每月发送</p></li>
+		<li><img src="./images/subpic05.jpg"><p>手机提醒</p></li>
+	</ul>
+	<div class="clear"></div>
+	<div class="copyright">© 2013-2014 北京爱漫美熙网络科技有限公司 版权所有 
+网站备案/许可证号：京ICP备14012501号-1</div>
+</footer>
+<!-- 底部 -->
+<script type="text/javascript">
+ //购物车数量增减
+    $(".pc_carNumSub").click(function(){
+        var sid = $(this).parents('tr').find('input[name="sid[]"]').val();
+        var carNum=parseInt($(this).siblings(".pc_carNumInput").val());
+        var obj = $(this).parents('tr');
+        if(carNum<=10){
+            var num = carNum>2?(carNum-1):1; 
+            $(this).siblings(".pc_carNumInput").val(num);
+
+            $.post('http://www.loveame.com/index/buy/update.html', 'sid='+sid+'&num='+num+'&action=change', function(data){
+                    $('#priceTotal').html(data.total);
+                    $('#countNum').html(data.total_rows);
+                    $(obj).find('.rowTotal span').html(data.item_total);
+            },'json');
+        }else{
+            $(this).siblings(".pc_carNumInput").val(10);
+        }
+    });
+    $(".pc_carNumAdd").click(function(){
+        var sid = $(this).parents('tr').find('input[name="sid[]"]').val();
+        var carNum=parseInt($(this).siblings(".pc_carNumInput").val());
+        var obj = $(this).parents('tr');
+        if(carNum<=9){
+            var num = carNum+1;
+            $(this).siblings(".pc_carNumInput").val(num);
+            $.post('http://www.loveame.com/index/buy/update.html', 'sid='+sid+'&num='+num+'&action=change', function(data){
+                $('#priceTotal').html(data.total);
+                $('#countNum').html(data.total_rows);
+                $(obj).find('.rowTotal span').html(data.item_total);
+            },'json');
+        }else{
+            $(this).siblings(".pc_carNumInput").val(10); 
+        }
+    });
+</script>
+</body>
+</html>

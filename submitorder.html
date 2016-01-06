@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>确认订单</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1;" id="viewport" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/touch.js"></script>
+    <script type="text/javascript" src="js/1.7.1-jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!-- 导航以上 -->
+<div class="z_header">
+    <div class="z_logo"><img src="./images/logo.jpg"></div>
+    <p><a class="z_cart" href=""><img src="./images/cart.jpg"><i>1</i></a><a class="z_personal" href=""><img src="./images/personal.jpg"></a></p>
+</div>
+<div class="clear"></div>
+<div class="z_nav" id="z_nav">
+    <ul>
+        <li style="width:15.625%;"><a href="index.html">首页<span></span></a></li>
+        <li><a href="orderit.html">立即订购<span></span></a></li>
+        <li><a href="special.html">特别策划<span></span></a></li>
+        <li><a href="amebox.html">A蜜魔盒<span></span></a></li>
+        <i><img height="13" class="z_new" src="./images/new.png"></i>
+        <li style="width:11.5625%;float:right;"><a class="left_nav"><img height="44" src="./images/left_nav.jpg"></a></li>
+    </ul>
+</div>
+<div class="z_subnav" style="display:none;">
+    <ul>
+        <li><a href="">如何订购</a></li>
+        <li><a href="">主题盒子</a></li>
+        <li><a href="">A蜜资讯</a></li>
+        <li><a href="">A蜜晒单</a></li>
+    </ul>
+</div>
+<!-- 导航以上 -->
+    <div id="main">
+    
+        <div class="drawer" style="margin-bottom:24px;">
+            <!-- <p class="drawerTop drawerTop2" style="background-position:center -191px; margin-top:22px; margin-bottom:24px;">
+            </p> -->
+        </div>
+        <div class="payMain">
+            <p style="height:10px; font-size:6px;"></p>
+            <p class="zebraBbTop loginBut">
+                <span class="payTopText">提交订单</span>
+                <a href="http://www.loveame.com/index/buy/cart.html" class="payTopButtom">返回修改</a>
+            </p>
+            <div id="carList">
+                <table class="carTable" cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>盒子</th>
+                    <th>单价</th>
+                    <th width="31.25%">数量</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <div class="carPro blackGold">
+                            <a href="http://www.loveame.com/box/36.html" class="carProPic lineBlockLeft" target="_blank"><img src="http://www.loveame.com/upload/box/2014/09/10/82251410336760.jpg" /></a>
+                            <a href="http://www.loveame.com/box/36.html" class="carProTit lineBlockRight" target="_blank">优雅魔法饰品盒子<br></a>
+                        </div>
+                    </td>
+                    <td><span class="price">￥288.00</span></td>
+                    <td>
+                        <div class="carNumDiv blackGold">
+                            <a class="carNumSub lineBlockLeft" href="javascript:void(0)">-</a>
+                            <input readonly="readonly"  class="carNumInput lineBlockLeft" type="text" name="num" value="1" />
+                            <a class="carNumAdd lineBlockLeft" href="javascript:void(0)">+</a>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <div class="carPro blackGold">
+                            <a href="http://www.loveame.com/box/14.html" class="carProPic lineBlockLeft" target="_blank"><img src="http://www.loveame.com/upload/box/2014/09/10/87011410336598.jpg"/></a>
+                            <a href="http://www.loveame.com/box/14.html" class="carProTit lineBlockRight" target="_blank">阿莎娜套餐体验套餐</a>
+                        </div>
+                    </td>
+                    <td><span class="price">￥88.00</span></td>
+                    <td>
+                        <div class="carNumDiv blackGold">
+                            <a class="carNumSub lineBlockLeft" href="javascript:void(0)">-</a>
+                            <input readonly="readonly"  class="carNumInput lineBlockLeft" type="text" name="num" value="1" />
+                            <a class="carNumAdd lineBlockLeft" href="javascript:void(0)">+</a>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <div class="carPro blackGold">
+                            <a href="http://www.loveame.com/box/8.html" class="carProPic lineBlockLeft" target="_blank"><img src="http://www.loveame.com/upload/box/2014/09/10/1491410336583.jpg"/></a>
+                            <a href="http://www.loveame.com/box/8.html" class="carProTit lineBlockRight" target="_blank">恩芝套餐体验套餐</a>
+                        </div>
+                    </td>
+                    <td><span class="price">￥98.00</span></td>
+                    <td>
+                        <div class="carNumDiv blackGold">
+                            <a class="carNumSub lineBlockLeft" href="javascript:void(0)">-</a>
+                            <input readonly="readonly"  class="carNumInput lineBlockLeft" type="text" name="num" value="1" />
+                            <a class="carNumAdd lineBlockLeft" href="javascript:void(0)">+</a>
+                        </div>
+                    </td>
+                </tr>
+                                </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5" style="background:none;">
+                                <div class="lineBlockRight">总计：<strong class="priceTotal">￥474</strong>元</div>
+                                <div class="lineBlockRight" style="margin-right:30px;">共<strong class="countNum">3</strong>个盒子</div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="addrDiv">
+                <p style="height:24px;"></p>
+                <p class="zebraBbTop loginBut">
+                    <span class="payTopText">收货地址</span>
+                </p>
+                <ul class="addrListUl">
+                                                            <ol class="newAddress">
+                        <div class="blackGold">
+                            <div class="formEleGroup">
+                                <input class="formG1" type="radio" id="addrNew" name="address" value="0" />
+                                <label class="formG2" for="addrNew">创建新地址</label>
+                            </div>
+                        </div>
+                    </ol>
+                                        <ol class="addrNewOlForm" style="display: none;">
+                        <form method="post" id="address" action="http://www.loveame.com/member/home/address.html" onsubmit="return hd_submit(this,'',function(){window.location.href = window.location.href;});">
+                        <input type="hidden" name="id" id="id" value="">
+                        <div class="inputGroup">
+                            <span class="fieldLeft"><label>*收货人：</label></span>
+                            <span class="fieldRig">
+                                <input type="text" name="name" class="inputStyle" placeholder="" />
+                            </span>
+                        </div>
+                        <div class="inputGroup">
+                            <span class="fieldLeft"><label>*手机号码：</label></span>
+                            <span class="fieldRig">
+                                <input type="text" name="phone" class="inputStyle" placeholder="" />
+                            </span>
+                        </div>
+                        <div id="element_id" class="inputGroup">
+                            <span class="fieldLeft"><label>省市区：</label></span>
+                            <span class="fieldRig">
+                                <select name="province" class="selectStyle province">
+                                    
+                                </select>
+                                <select name="city" class="selectStyle city">
+                                    
+                                </select>
+                                <select name="district" class="selectStyle district">
+                                    
+                                </select>
+                            </span>
+                        </div>
+                        <div class="inputGroup">
+                            <span class="fieldLeft"><label>*街道地址：</label></span>
+                            <span class="fieldRig">
+                                <input type="text" name="street" class="inputStyle" placeholder="" />
+                            </span>
+                        </div>
+                        <div class="inputGroup">
+                            <span class="fieldLeft"><label>邮政编码：</label></span>
+                            <span class="fieldRig">
+                                <input type="text" name="zipcode" class="inputStyle" placeholder="" />
+                            </span>
+                        </div>
+                        <input type="hidden" name="default" value="1">
+                        <span class="submitButtonA"><a class="submitButton" onclick="$('#address').submit();" style="height:25px; line-height:25px;margin-left:26%;">保存并使用该地址</a></span>
+                        </form>
+                    </ol>
+                </ul>
+            </div>
+            
+            <div class="logisticsDiv">
+                <p style="height:28px;"></p>
+                <p class="zebraBbTop loginBut">
+                    <span class="payTopText">物流配送</span>
+                </p>
+                <p class="logistics" style="height:38px; line-height:38px; border:#CCC 1px solid; padding-left:35px; margin-top:11px;">默认申通  运费：￥0元</p>
+            </div>
+            <div class="payModeDiv">
+                <p style="height:28px;"></p>
+                <p class="zebraBbTop loginBut">
+                    <span class="payTopText">支付方式</span>
+                </p>
+                <div class="payModeList bank-list">
+                    <div class="payModeListTop" style="padding-left:38px;">
+                        <div class="payModeOne">
+                            <input class="payModeLiLeft lineBlockLeft" type="radio" checked="checked" name="pay_bank" id="payMode" value="directPay" />
+                            <label class="payModeLiRight lineBlockRight" for="payMode"><img src="http://www.loveame.com/template/ame/images/paymode1.jpg" width="120" height="30" /></label>
+                        </div>
+                        <p>网银直接支付。<font color="#8f8f8f">（由支付宝提供接口，确保你的资金安全）</font></p>
+                    </div>
+                    <div style="_height: 1%" class="gateway_list gateway_list_w">
+                            <ul class="pay_Super pay_Super_w cfl">
+                                <li>
+                                    <input type="radio" id="check-ICBC" value="ICBCB2C" name="pay_bank">
+                                    <label for="check-ICBC" class="icon ICBCB2C"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="CMB" id="check-CMB" name="pay_bank">
+                                    <label for="check-CMB" class="icon CMB"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="CCB" id="check-CCB" name="pay_bank">
+                                    <label for="check-CCB" class="icon CCB"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="BOCB2C" id="check-BOC" name="pay_bank">
+                                    <label for="check-BOC" class="icon BOCB2C"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="ABC" id="check-ABC" name="pay_bank">
+                                    <label for="check-ABC" class="icon ABC"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="COMM" id="check-COMM" name="pay_bank">
+                                    <label for="check-COMM" class="icon COMM"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="PSBC-DEBIT" id="check-PSBC" name="pay_bank">
+                                    <label for="check-PSBC" class="icon PSBC-DEBIT"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="CEBBANK" id="check-CEB" name="pay_bank">
+                                    <label for="check-CEB" class="icon CEBBANK"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="SPDB" id="check-SPDB" name="pay_bank">
+                                    <label for="check-SPDB" class="icon SPDB"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="GDB" id="check-GDB" name="pay_bank">
+                                    <label for="check-GDB" class="icon GDB"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="CITIC" id="check-CITIC" name="pay_bank">
+                                    <label for="check-CITIC" class="icon CITIC"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="CIB" id="check-CIB" name="pay_bank">
+                                    <label for="check-CIB" class="icon CIB"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="SDB" id="check-SDB" name="pay_bank">
+                                    <label for="check-SDB" class="icon SDB"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="CMBC" id="check-CMBC" name="pay_bank">
+                                    <label for="check-CMBC" class="icon CMBC"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="BJBANK" id="check-BJBANK" name="pay_bank">
+                                    <label for="check-BJBANK" class="icon BJBANK"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="HZCBB2C" id="check-HZCB" name="pay_bank">
+                                    <label for="check-HZCB" class="icon HZCBB2C"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="SHBANK" id="check-SHBANK" name="pay_bank">
+                                    <label for="check-SHBANK" class="icon SHBANK"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="BJRCB" id="check-BJRCB" name="pay_bank">
+                                    <label for="check-BJRCB" class="icon BJRCB"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="SPABANK" id="check-SPABANK" name="pay_bank">
+                                    <label for="check-SPABANK" class="icon SPABANK"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="FDB" id="check-FDB" name="pay_bank">
+                                    <label for="check-FDB" class="icon FDB"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="WZCBB2C-DEBIT" id="check-WZCB" name="pay_bank">
+                                    <label for="check-WZCB" class="icon WZCBB2C-DEBIT"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="NBBANK " id="check-NBBANK" name="pay_bank">
+                                    <label for="check-NBBANK" class="icon NBBANK"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="ICBCBTB" id="check-ICBCBTB" name="pay_bank">
+                                    <label for="check-ICBCBTB" class="icon ICBCBTB"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="CCBBTB" id="check-CCBBTB" name="pay_bank">
+                                    <label for="check-CCBBTB" class="icon CCBBTB"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="SPDBB2B" id="check-SPDBBTB" name="pay_bank">
+                                    <label for="check-SPDBBTB" class="icon SPDBB2B"></label>
+                                </li>
+                                <li>
+                                    <input type="radio" value="ABCBTB" id="check-ABCBTB" name="pay_bank">
+                                    <label for="check-ABCBTB" class="icon ABCBTB"></label>
+                                </li>
+                            </ul>
+                        </div>
+                    <span class="submitButtonA"><a class="submitButton bankmore" href="javascript:void(0);" style="margin:16px auto;">其它银行<i class="lg_pull">∨</i></a></span>
+                </div>        
+            </div>
+            <script>
+                $('.bankmore').bind('click',function(){
+                    if($('.gateway_list_w').height()<=160){
+                        $('.pay_Super_w').css({height:'auto'})
+                        $('.lg_pull').html('∧');
+                        
+                    }else if($('.gateway_list_w').height()>160){
+                        $('.pay_Super_w').css({height:'112px'});
+                        $('.lg_pull').html('∨');
+                    }
+                })
+            </script>
+            <div class="orderInfoDiv">
+                <p style="height:28px;"></p>
+                <p class="zebraBbTop loginBut">
+                    <span class="payTopText">订单信息</span>
+                </p>
+                <p class="orderInfo" style="border:#CCC 1px solid; line-height:30px; padding:18px 30px; margin-top:10px;">
+                    收货信息：    ( 收) <br />
+                    物流运费：￥0元<br />
+                    您需支付：￥474元
+                </p>
+            </div>
+            <span class="submitButtonA"><a class="submitButton" onclick="check_setup();" style="margin:18px auto; margin-bottom:25px;">提交订单</a></span>
+        </div>
+        <p style="height:30px; clear:both;"></p>
+    </div><!--main end-->
+    <script src="./js/jquery.cxselect.min.js"></script>
+    <script type="text/javascript">
+    //购物车数量增减
+    $(".carNumSub").click(function(){
+        var sid = $(this).parents('tr').find('input[name="sid[]"]').val();
+        var carNum=parseInt($(this).siblings(".carNumInput").val());
+        var obj = $(this).parents('tr');
+        if(carNum<=10){
+            var num = carNum>2?(carNum-1):1; 
+            $(this).siblings(".carNumInput").val(num);
+
+            $.post('http://www.loveame.com/index/buy/update.html', 'sid='+sid+'&num='+num+'&action=change', function(data){
+                    $('#priceTotal').html(data.total);
+                    $('#countNum').html(data.total_rows);
+                    $(obj).find('.rowTotal span').html(data.item_total);
+            },'json');
+        }else{
+            $(this).siblings(".carNumInput").val(10);
+        }
+    });
+    $(".carNumAdd").click(function(){
+        var sid = $(this).parents('tr').find('input[name="sid[]"]').val();
+        var carNum=parseInt($(this).siblings(".carNumInput").val());
+        var obj = $(this).parents('tr');
+        if(carNum<=9){
+            var num = carNum+1;
+            $(this).siblings(".carNumInput").val(num);
+            $.post('http://www.loveame.com/index/buy/update.html', 'sid='+sid+'&num='+num+'&action=change', function(data){
+                $('#priceTotal').html(data.total);
+                $('#countNum').html(data.total_rows);
+                $(obj).find('.rowTotal span').html(data.item_total);
+            },'json');
+        }else{
+            $(this).siblings(".carNumInput").val(10); 
+        }
+    });
+    
+        $.cxSelect.defaults.url = 'http://www.loveame.com/template/ame/js/city.ame.js'; // 提示：如果服务器不支持 .json 类型文件，请将文件改为 .js 文件 
+        $.cxSelect.defaults.nodata = 'none';
+        // selects 为数组形式，请注意顺序 
+        
+        var str = $('.addrNewOlForm').html();
+
+        var addrNewOlForm = $('<ol class="addrNewOlForm">'+str+'</ol>');
+        $('.addrListUl ol:not(:last)').click(function(){
+            var span = $('<span class="addrNewIco">寄送至</span>');
+            $('.addrNewIco').remove();
+            $('.addrNewOlForm').remove();
+            $(this).addClass('addrNewOl').siblings().removeClass('addrNewOl');
+            $(this).find('.blackGold').prepend(span);
+            $(this).find('input[name="address"]').attr('checked','checked');
+        });
+
+        $('.newAddress').click(function(){
+            $(this).after(addrNewOlForm);
+            $('#element_id').cxSelect({ 
+                selects: ['province', 'city', 'district'], 
+                nodata: 'none',
+                required: true
+            });
+            $('#id').val('');
+            //表单验证
+        
+            $("#address").validate({
+                //验证规则
+                street: {
+                    rule: {
+                        required: true
+                    },
+                    error: {
+                        required: "街道地址不能为空"
+                    }
+                },
+                name: {
+                    rule: {
+                        required: true
+                    },
+                    error: {
+                        required: "收货人姓名不能为空"
+                    }
+                },
+                phone: {
+                    rule: {
+                        required: true,
+                        phone: true
+                    },
+                    error: {
+                        required: "请填写手机号码",
+                        phone: "请填写正确的手机号码"
+                    }
+                },
+                zipcode: {
+                    rule: {
+                        regexp: /^[0-9]{6}$/
+                    },
+                    error: {
+                        regexp: "请填写正确的邮编"
+                    }
+                },
+            })
+        });
+
+        $('.addrUpdate').click(function(event){
+            event.stopPropagation();
+            var span = $('<span class="addrNewIco">寄送至</span>');
+            $('.addrNewIco').remove();
+            $('.addrNewOlForm').remove();
+            $(this).parents('ol').addClass('addrNewOl').siblings().removeClass('addrNewOl');
+            $(this).parents('ol').find('.blackGold').prepend(span);
+            $(this).parents('ol').find('input[name="address"]').attr('checked','checked');
+            $(this).parents('ol').after(addrNewOlForm);
+            var data = $.parseJSON($(this).attr('data'));
+            $('.addrNewOlForm input[name="phone"]').val(data.phone);
+            $('.addrNewOlForm input[name="name"]').val(data.name);
+            $('.addrNewOlForm input[name="street"]').val(data.street);
+            $('.addrNewOlForm input[name="zipcode"]').val(data.zipcode);
+            var select = '<select name="province" class="selectStyle province" data-value="'+data.province+'">'
+                        +'</select> '+
+                        '<select name="city" class="selectStyle city" data-value="'+data.city+'">'+
+                        '</select> '+
+                        '<select name="district" class="selectStyle district" data-value="'+data.district+'">'+
+                        '</select>';
+            $('#element_id .fieldRig').html(select);
+            $('#element_id').cxSelect({ 
+                selects: ['province', 'city', 'district'], 
+                nodata: 'none',
+                required: true
+            });
+            if(data.default ==1){
+                $('.addrNewOlForm input[name="default"]').attr('checked','checked');
+            }else{
+                $('.addrNewOlForm input[name="default"]').removeAttr('checked');
+            }
+            $('#id').val(data.id);
+            $('.inputMsg').removeClass('');
+            //表单验证
+        
+            $("#address").validate({
+                //验证规则
+                street: {
+                    rule: {
+                        required: true
+                    },
+                    error: {
+                        required: "街道地址不能为空"
+                    }
+                },
+                name: {
+                    rule: {
+                        required: true
+                    },
+                    error: {
+                        required: "收货人姓名不能为空"
+                    }
+                },
+                phone: {
+                    rule: {
+                        required: true,
+                        phone: true
+                    },
+                    error: {
+                        required: "请填写手机号码",
+                        phone: "请填写正确的手机号码"
+                    }
+                },
+                zipcode: {
+                    rule: {
+                        regexp: /^[0-9]{6}$/
+                    },
+                    error: {
+                        regexp: "请填写正确的邮编"
+                    }
+                },
+            })
+        });
+        
+    function check_setup(){
+        var address=$("input[name='address']:checked").val();
+        var pay_bank=$("input[name='pay_bank']:checked").val();
+        if(address=="" || address==0){
+            $.dialog({'message':" 请创建或选择您的收货地址！ ",type:"error"});
+            return false;
+        }else if(pay_bank==""){
+            $.dialog("请选择您的支付方式！","error");
+            return false;
+        }else{
+            $.post('http://www.loveame.com/index/buy/createOrder.html',"address="+address+"&pay_bank="+pay_bank,function(data){
+                if(data.orderSn){
+                    window.location.href = 'http://www.loveame.com/index/buy/createOrder.html'+'?orderSn='+data.orderSn;
+                }else{
+                    $.dialog({'message':" 提交订单失败 ",type:"error"});
+                }
+            },'json');
+        }
+    }
+    </script>
+<div id="dialogRegister" class="dialogRegister" style="width:800px; height:450px;overflow:hidden; zoom:1;display:none;z-index:302; background:#FFF;">
+    <!--<span style="position:absolute;z-index:303;cursor:pointer; top:0; right:10px;overflow:hidden; color:#cdb780; font-size:20px;" onclick="">x</span>-->
+    <div class="registerBox" style="">
+        <p class="dialogTitle">新用户注册</p>
+        <div class="dialogConLeft">
+            <form name="regForm" id="regForm" action="http://www.loveame.com/Member/login/reg.html" method="post" onsubmit="return hd_submit(this,'http://www.loveame.com/index/buy/cartStep.html');" >
+            <div class="inputGroup">
+                <span class="fieldLeft"><label>邮箱：</label></span>
+                <span class="fieldRig">
+                    <input type="text" class="inputStyle email" placeholder=" 用于登录的邮箱" name="reg_email" />
+                    <p id="hd_reg_email" class="inputMsg"></p>
+                </span>
+            </div>
+            
+            <div class="inputGroup">
+                <span class="fieldLeft"><label>昵称：</label></span>
+                <span class="fieldRig">
+                    <input type="text" class="inputStyle nickname" placeholder=" 昵称" name="reg_nickname" />
+                    <p id="hd_reg_nickname" class="inputMsg"></p>
+                </span>
+            </div>
+            
+            <div class="inputGroup">
+                <span class="fieldLeft"><label>密码：</label></span>
+                <span class="fieldRig">
+                    <input type="password" class="inputStyle password" placeholder=" 密码" name="reg_password" />
+                    <p id="hd_reg_password" class="inputMsg"></p>
+                </span>
+            </div>
+            
+            <div class="inputGroup">
+                <span class="fieldLeft"><label>确认密码：</label></span>
+                <span class="fieldRig">
+                    <input type="password" class="inputStyle password2" placeholder=" 确认密码" name="reg_password2" />
+                    <p id="hd_reg_password2" class="inputMsg"></p>
+                </span>
+            </div>
+            
+            <div class="blackGold" style="margin-bottom:22px;">
+                <a href="http://www.loveame.com/privacy.html" target="_blank" style="text-decoration:underline; margin-left:76px;">用户使用协议</a>
+            </div>
+            
+            <div class="inputGroup">
+                <span class="fieldLeft"></span>
+                <span class="fieldRig submitButtonA">
+                    <a class="submitButton" onclick="$('#regForm').submit();">同意协议并注册</a>
+                </span>
+            </div>
+            </form>
+        </div>
+        <div class="dialogConRight">
+            <p class="dialogConRightTit">已经注册？</p>
+            <p class="dialogConRightBut submitButtonA"><a class="submitButton buttonLogin" href="javascript:void(0);">立即登陆</a></p>
+            <p style="height:33px;"></p>
+            <div style="margin-left:70px;">
+                <p style="margin-bottom:13px;">使用合作账号登录：</p>
+                <a class="weiboAuth" style="margin-right:22px;"><img src="http://www.loveame.com/template/ame/images/otherIco1.gif" /></a><a class="qqAuth"><img src="http://www.loveame.com/template/ame/images/otherIco2.gif" /></a>
+            </div>
+        </div>
+        <p style="clear:both; font-size:0px;"></p>
+    </div>
+</div>
+<div id="dialogLogin" class="dialogLogin" style="width:800px; height:450px;overflow:hidden; zoom:1;display:none;z-index:302; background:#FFF;">
+    <div class="loginBox" style="">
+        <p class="dialogTitle">已注册用户登录</p>
+        <div class="dialogConLeft">
+            <form  class="loginForm" id="loginForm" action="http://www.loveame.com/Member/login/ajax_login.html" method="post" onsubmit="return hd_submit(this,'http://www.loveame.com/index/buy/cartStep.html');">
+            <div class="inputGroup">
+                <span class="fieldLeft"><label>邮箱：</label></span>
+                <span class="fieldRig">
+                    <input type="text" class="inputStyle email" name="login_email" placeholder="请填写邮箱" />
+                    <p id="hd_login_email" class="inputMsg"></p>
+                </span>
+            </div>
+            
+            
+            
+            <div class="inputGroup">
+                <span class="fieldLeft"><label>密码：</label></span>
+                <span class="fieldRig">
+                    <input type="password" class="inputStyle password" name="login_password" placeholder="请输入密码" />
+                    <p id="hd_login_password" class="inputMsg"></p>
+                </span>
+            </div>
+            
+            
+            <div class="safeInfo blackGold">
+                <input class="remember" type="checkbox"  name="remember" value="1" />
+                <span class="autoLoginText">&nbsp;下次自动登录</span>
+                <!-- <a class="forgetPwdText" href="#" style=" float:right;">忘记密码？</a> -->
+            </div>
+            
+            <div class="inputGroup">
+                <span class="fieldLeft"></span>
+                <span class="fieldRig submitButtonA">
+                    <a class="submitButton" onclick="$('#loginForm').submit();">登 陆</a>
+                </span>
+            </div>
+            </form>
+            <div style="height:12px;"></div>
+            <div style="margin-left:75px;">
+                <p style="margin-bottom:13px;">使用合作账号是登录：</p>
+                <a class="weiboAuth" style="margin-right:22px;"><img src="http://www.loveame.com/template/ame/images/otherIco1.gif" /></a><a class="qqAuth"><img src="http://www.loveame.com/template/ame/images/otherIco2.gif" /></a>
+            </div>
+            
+        </div>
+        <div class="dialogConRight">
+            <p class="dialogConRightTit">我还没有账号</p>
+            <p class="dialogConRightBut submitButtonA"><a class="submitButton buttonReg" href="javascript:void(0);">立即注册</a></p>
+            
+        </div>
+        <p style="clear:both; font-size:0px;"></p>
+    </div>
+</div>
+<script type="text/javascript">
+    $("#loginForm").validate({
+        login_password: {
+            rule: {
+                required: true
+            },
+            error: {
+                required: "请填写密码."
+            }
+        },
+        login_email: {
+            rule: {
+                required: true,
+                email: true
+            },
+            error: {
+                required: "请填写联系邮箱.",
+                email: "请填写正确的邮箱."
+            }
+        }
+    });
+    $("#regForm").validate({
+        reg_password: {
+            rule: {
+                required: true,
+                regexp: /^.{6,16}$/
+            },
+            error: {
+                required: "请填写密码.",
+                regexp: "6-16个字符"
+            }
+        },
+        reg_password2: {
+            rule: {
+               confirm: "reg_password"
+            },
+            error: {
+                confirm: " 确认密码输入错误 "
+
+            }
+        },
+        reg_email: {
+            rule: {
+                required: true,
+                email: true,
+                ajax:"http://www.loveame.com/Member/login/checkEmail.html"
+            },
+            error: {
+                required: "请填写联系邮箱.",
+                email: "请填写正确的邮箱.",
+                ajax: "邮箱已经存在!"
+            }
+        },
+        reg_nickname: {
+            rule: {
+                required: true,
+                regexp: /^(?!_)(?!.*?_$)[a-zA-Z0-9_\u4e00-\u9fa5]{2,10}$/,
+                ajax:"http://www.loveame.com/Member/login/checkNicname.html"
+            },
+            error: {
+                required: "请填写昵称.",
+                regexp: "2-10个字符,不能以下划线开头和结尾",
+                ajax: "昵称已经存在!"
+            }
+        }
+    });
+var win;
+var checkConnect;
+var weiboAuth = "http://www.loveame.com/Member/login/tlogin/type/sina.html";
+var qqAuth = "http://www.loveame.com/Member/login/tlogin/type/qq.html";
+var winleft = ($(window).width() - 600) / 2;
+var wintop =  ($(window).height()+20 - 500) / 2;
+$('.weiboAuth').click(function(){
+win = window.open(weiboAuth, '微博认证', 'width=700,height=600,alwaysRaised=yes,resizable=no,top='+wintop+',left='+winleft);
+});
+$('.qqAuth').click(function(){
+win = window.open(qqAuth, 'QQ认证', 'width=700,height=600,alwaysRaised=yes,resizable=no,top='+wintop+',left='+winleft);
+});
+checkConnect = setInterval(function() {
+if (!win || !win.closed) return;
+clearInterval(checkConnect);
+    if("" == ""){
+        window.location.href=ROOT; 
+    }else{
+        window.location.reload();
+    }
+}, 100);
+</script>
+<!-- <p id="indexclearBottom" style="height:800px;"></p> -->
+<footer>
+    <ul>
+        <li><img src="./images/subpic01.jpg"><p>超值精选</p></li>
+        <li><img src="./images/subpic02.jpg"><p>正品保证</p></li>
+        <li><img src="./images/subpic03.jpg"><p>免费运送</p></li>
+        <li><img src="./images/subpic04.jpg"><p>每月发送</p></li>
+        <li><img src="./images/subpic05.jpg"><p>手机提醒</p></li>
+    </ul>
+    <div class="clear"></div>
+    <div class="copyright">© 2013-2014 北京爱漫美熙网络科技有限公司 版权所有 
+网站备案/许可证号：京ICP备14012501号-1</div>
+</footer>
+<!-- 底部 -->
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>确认订单</title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1;" id="viewport" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<script type="text/javascript" src="js/touch.js"></script>
+	<script type="text/javascript" src="js/1.7.1-jquery.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+</head>
+<body>
+<!-- 导航以上 -->
+<div class="z_header">
+    <div class="z_logo"><img src="./images/logo.jpg"></div>
+    <p><a class="z_cart" href=""><img src="./images/cart.jpg"><i>1</i></a><a class="z_personal" href=""><img src="./images/personal.jpg"></a></p>
+</div>
+<div class="clear"></div>
+<div class="z_nav" id="z_nav">
+	<ul>
+		<li style="width:15.625%;"><a href="index.html">首页<span></span></a></li>
+		<li><a href="orderit.html">立即订购<span></span></a></li>
+		<li><a href="special.html">特别策划<span></span></a></li>
+		<li><a href="amebox.html">A蜜魔盒<span></span></a></li>
+		<i><img height="13" class="z_new" src="./images/new.png"></i>
+		<li style="width:11.5625%;float:right;"><a class="left_nav"><img height="44" src="./images/left_nav.jpg"></a></li>
+	</ul>
+</div>
+<div class="z_subnav" style="display:none;">
+	<ul>
+		<li><a href="">如何订购</a></li>
+		<li><a href="">主题盒子</a></li>
+		<li><a href="">A蜜资讯</a></li>
+		<li><a href="">A蜜晒单</a></li>
+	</ul>
+</div>
+<!-- 导航以上 -->
+<div class="payMain">
+    <p class="zebraBbTop loginBut">
+        <span class="payTopText">提交订单</span>
+        <a href="http://www.loveame.com/box.html" class="payTopButtom">继续购物</a>
+	<div class="clear"></div>
+    </p>
+
+        <form id="carList" name="carList" method="post" action="">
+        <table class="carTable" cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <th><input class="carListCheckTop" type="checkbox" /></th>
+                    <th>盒子</th>
+                    <th>单价</th>
+                    <th width="31.25%">数量</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td><input type="checkbox" name="sid[]" value="b92abc42" /></td>
+                    <td>
+                        <div class="carPro blackGold">
+                            <a href="http://www.loveame.com/box/36.html" class="carProPic lineBlockLeft" target="_blank"><img src="http://www.loveame.com/upload/box/2014/09/10/82251410336760.jpg" /></a>
+                            <a href="http://www.loveame.com/box/36.html" class="carProTit lineBlockRight" target="_blank">优雅魔法饰品盒子<br></a>
+                        </div>
+                    </td>
+                    <td><span class="price">￥288.00</span></td>
+                    <td>
+                        <div class="carNumDiv blackGold">
+                            <a class="carNumSub lineBlockLeft" href="javascript:void(0)">-</a>
+                            <input readonly="readonly"  class="carNumInput lineBlockLeft" type="text" name="num" value="1" />
+                            <a class="carNumAdd lineBlockLeft" href="javascript:void(0)">+</a>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><input type="checkbox" name="sid[]" value="143238a8" /></td>
+                    <td>
+                        <div class="carPro blackGold">
+                            <a href="http://www.loveame.com/box/14.html" class="carProPic lineBlockLeft" target="_blank"><img src="http://www.loveame.com/upload/box/2014/09/10/87011410336598.jpg"/></a>
+                            <a href="http://www.loveame.com/box/14.html" class="carProTit lineBlockRight" target="_blank">阿莎娜套餐体验套餐</a>
+                        </div>
+                    </td>
+                    <td><span class="price">￥88.00</span></td>
+                    <td>
+                        <div class="carNumDiv blackGold">
+                            <a class="carNumSub lineBlockLeft" href="javascript:void(0)">-</a>
+                            <input readonly="readonly"  class="carNumInput lineBlockLeft" type="text" name="num" value="1" />
+                            <a class="carNumAdd lineBlockLeft" href="javascript:void(0)">+</a>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td><input type="checkbox" name="sid[]" value="6904c570" /></td>
+                    <td>
+                        <div class="carPro blackGold">
+                            <a href="http://www.loveame.com/box/8.html" class="carProPic lineBlockLeft" target="_blank"><img src="http://www.loveame.com/upload/box/2014/09/10/1491410336583.jpg"/></a>
+                            <a href="http://www.loveame.com/box/8.html" class="carProTit lineBlockRight" target="_blank">恩芝套餐体验套餐</a>
+                        </div>
+                    </td>
+                    <td><span class="price">￥98.00</span></td>
+                    <td>
+                        <div class="carNumDiv blackGold">
+                            <a class="carNumSub lineBlockLeft" href="javascript:void(0)">-</a>
+                            <input readonly="readonly"  class="carNumInput lineBlockLeft" type="text" name="num" value="1" />
+                            <a class="carNumAdd lineBlockLeft" href="javascript:void(0)">+</a>
+                        </div>
+                    </td>
+                </tr>
+                                </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">
+                        <span class="blackGold"><a class="delCarPro lineBlockLeft" href="javascript:void(0);">删除选中盒子</a></span>
+                        <div class="lineBlockRight">总计：<strong class="priceTotal">￥<span id="priceTotal">474</span></strong>元</div>
+                        <div class="lineBlockRight" style="margin-right:30px;">共<strong class="countNum"><span id="countNum">3</span></strong>个盒子</div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="carBottom">
+            <span class="blackGold"><a class="lineBlockLeft" href="#" style="padding: 4%;">继续购物</a></span>
+            <span class="whiteOrange"><a id="submitCarForm" class="memKfMsgButtom" href="javascript:void(0);">去结算</a></span>
+        </div>
+    </form>
+</div>
+<!--main end-->
+<script type="text/javascript">
+    $('.delBox').click(function(){
+        var sid = $(this).parents('tr').find('input[name="sid[]"]').val();
+        var obj = $(this);
+         $.post('http://www.loveame.com/index/buy/update.html', 'sid='+sid+'&action=del', function(data){
+            if(data.row == 0){
+                window.location.href = 'http://www.loveame.com/box.html';
+            }else{
+                $(obj).parents('tr').remove();
+                $('#topCart .cnum').html(parseInt($('#topCart .cnum').html())-1);
+                $('#priceTotal').html(data.total);
+                $('#countNum').html(data.total_rows);
+            }
+        },'json');
+    });
+    $('.delCarPro').click(function(){
+        var sid = $('input:checked').serialize();
+        var num = $('input:checked').size();
+        if(sid == ''){
+            $.dialog({'message':" 请选择一个盒子 ",type:"error"});
+        }
+        $.ajax({
+            type: "POST",
+            url: 'http://www.loveame.com/index/buy/update/action/del.html',
+            data: sid,
+            dataType: 'json',
+            success: function(data){
+                if(data.row == 0){
+                    window.location.href = 'http://www.loveame.com/box.html';
+                }else{
+                    $('input:checked').each(function(){
+                        $(this).parents('tr').remove();
+                    });
+                    $('#topCart .cnum').html(parseInt($('#topCart .cnum').html())-num);
+                    $('#priceTotal').html(data.total);
+                    $('#countNum').html(data.total_rows);
+                }
+            }
+        });
+    });
+    //购物车数量增减
+    $(".carNumSub").click(function(){
+        var sid = $(this).parents('tr').find('input[name="sid[]"]').val();
+        var carNum=parseInt($(this).siblings(".carNumInput").val());
+        var obj = $(this).parents('tr');
+        if(carNum<=10){
+            var num = carNum>2?(carNum-1):1; 
+            $(this).siblings(".carNumInput").val(num);
+
+            $.post('http://www.loveame.com/index/buy/update.html', 'sid='+sid+'&num='+num+'&action=change', function(data){
+                    $('#priceTotal').html(data.total);
+                    $('#countNum').html(data.total_rows);
+                    $(obj).find('.rowTotal span').html(data.item_total);
+            },'json');
+        }else{
+            $(this).siblings(".carNumInput").val(10);
+        }
+    });
+    $(".carNumAdd").click(function(){
+        var sid = $(this).parents('tr').find('input[name="sid[]"]').val();
+        var carNum=parseInt($(this).siblings(".carNumInput").val());
+        var obj = $(this).parents('tr');
+        if(carNum<=9){
+            var num = carNum+1;
+            $(this).siblings(".carNumInput").val(num);
+            $.post('http://www.loveame.com/index/buy/update.html', 'sid='+sid+'&num='+num+'&action=change', function(data){
+                $('#priceTotal').html(data.total);
+                $('#countNum').html(data.total_rows);
+                $(obj).find('.rowTotal span').html(data.item_total);
+            },'json');
+        }else{
+            $(this).siblings(".carNumInput").val(10); 
+        }
+    });
+    //全选‘全不选
+    $(".carListCheckTop").click(function(){
+        if($(this).attr("checked"))
+        {
+            $("#carList :checkbox").attr("checked",true);
+        }else
+        {
+            $("#carList :checkbox").attr("checked",false);  
+        }
+    });
+    $('#submitCarForm').click(function(){
+        window.location.href = 'http://www.loveame.com/index/buy/cartStep.html';
+    });
+</script>
+<!-- 底部 -->
+<footer>
+	<ul>
+		<li><img src="./images/subpic01.jpg"><p>超值精选</p></li>
+		<li><img src="./images/subpic02.jpg"><p>正品保证</p></li>
+		<li><img src="./images/subpic03.jpg"><p>免费运送</p></li>
+		<li><img src="./images/subpic04.jpg"><p>每月发送</p></li>
+		<li><img src="./images/subpic05.jpg"><p>手机提醒</p></li>
+	</ul>
+	<div class="clear"></div>
+	<div class="copyright">© 2013-2014 北京爱漫美熙网络科技有限公司 版权所有 
+网站备案/许可证号：京ICP备14012501号-1</div>
+</footer>
+<!-- 底部 -->
+</body>
+</html>
